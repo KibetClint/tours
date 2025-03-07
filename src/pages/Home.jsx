@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// Updated featured destinations data using IDs
+// Featured destinations data using IDs
 const featuredDestinations = [
   {
     id: 1,
@@ -32,6 +32,13 @@ const featuredDestinations = [
     image: "/images/D4.jpg",
     alt: "Bali",
   },
+];
+
+// Top packages data now using IDs
+const topPackages = [
+  { id: 1, name: "Luxury Safari", img: "/images/D1.webp", price: "$2000" },
+  { id: 2, name: "Beach Escape", img: "/images/D3.jpg", price: "$1500" },
+  { id: 3, name: "Adventure Trek", img: "/images/D4.jpg", price: "$1800" }
 ];
 
 function Home() {
@@ -219,18 +226,18 @@ function Home() {
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-8">Top Packages</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: "Luxury Safari", img: "/images/D1.webp", price: "$2000", link: "/packages/luxury-safari" },
-              { name: "Beach Escape", img: "/images/D3.jpg", price: "$1500", link: "/packages/beach-escape" },
-              { name: "Adventure Trek", img: "/images/D4.jpg", price: "$1800", link: "/packages/adventure-trek" }
-            ].map((packageItem, index) => (
+            {topPackages.map((packageItem) => (
               <Link
-                key={index}
-                to={packageItem.link}
+                key={packageItem.id}
+                to={`/packages/${packageItem.id}`}
                 className="block transform transition duration-300 hover:scale-105 hover:shadow-lg"
               >
                 <div className="relative">
-                  <img src={packageItem.img} alt={packageItem.name} className="w-full h-64 object-cover rounded-lg" />
+                  <img
+                    src={packageItem.img}
+                    alt={packageItem.name}
+                    className="w-full h-64 object-cover rounded-lg"
+                  />
                   <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
                     <h3 className="text-white text-xl font-semibold">{packageItem.name}</h3>
                     <p className="text-white text-lg font-medium">{packageItem.price}</p>

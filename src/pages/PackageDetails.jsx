@@ -39,13 +39,9 @@ const PackageDetails = () => {
       <h2 className="text-2xl font-bold mb-4">Customer Testimonials</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
         {pkg.reviews.map((review, index) => (
-          <div
-            key={index}
-            className="border rounded-lg p-4 shadow-lg flex items-start"
-          >
-            {/* Replace the placeholder image with user-provided images, if available */}
+          <div key={index} className="border rounded-lg p-4 shadow-lg flex items-start">
             <img
-              src={`/images/D5.jpg`} // Placeholder images
+              src={`/images/D5.jpg`}
               alt={`Review by ${review.name}`}
               className="w-16 h-16 object-cover rounded-full mr-4"
             />

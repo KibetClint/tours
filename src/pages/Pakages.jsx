@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import packagesData from "../data/packagesData";
 
-
 const Packages = () => {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -39,6 +38,5 @@ const Packages = () => {
     </div>
   );
 };
-
 
 export default Packages;
