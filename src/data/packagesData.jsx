@@ -35,7 +35,132 @@ const packagesData = [
     promotions: "Get a free photography workshop on booking this package!",
     image: "/images/D6.jpg",
   },
-  // Add more package objects as needed...
+  {
+    id: 3,
+    destination: "Maasai Mara, Kenya",
+    activities: ["Wildlife Safaris", "Balloon Safari", "Cultural Encounters"],
+    description: "Experience the world-renowned Maasai Mara with its abundant wildlife and vibrant Maasai culture.",
+    price: 1600,
+    itinerary: [
+      { day: 1, details: "Arrival in Maasai Mara and evening game drive." },
+      { day: 2, details: "Full-day safari and an unforgettable hot air balloon ride." },
+      { day: 3, details: "Visit a local Maasai village and departure." },
+    ],
+    reviews: [
+      { name: "Sarah Lee", comment: "A truly immersive experience into Maasai culture!", rating: 4.8 },
+      { name: "John Doe", comment: "The balloon safari was breathtaking.", rating: 4.9 },
+    ],
+    promotions: "Book now for a free cultural tour experience!",
+    image: "/images/Mara.png",
+  },
+  {
+    id: 4,
+    destination: "Ngorongoro Crater, Tanzania",
+    activities: ["Crater Safari", "Hiking", "Wildlife Watching"],
+    description: "Explore the breathtaking Ngorongoro Crater and witness diverse ecosystems in a single tour.",
+    price: 1700,
+    itinerary: [
+      { day: 1, details: "Arrival and visit to the crater rim." },
+      { day: 2, details: "Full-day safari inside the crater." },
+      { day: 3, details: "Visit a local village and departure." },
+    ],
+    reviews: [
+      { name: "Michael Brown", comment: "A mesmerizing blend of nature and culture!", rating: 4.9 },
+      { name: "Anna Smith", comment: "The crater views were simply out of this world.", rating: 5 },
+    ],
+    promotions: "Early bird discount available for bookings this month!",
+    image: "/images/ngorongoro.jpeg",
+  },
+  {
+    id: 5,
+    destination: "Lake Manyara, Tanzania",
+    activities: ["Game Drives", "Bird Watching", "Nature Walks"],
+    description: "Discover the scenic beauty of Lake Manyara with its lush landscapes and diverse birdlife.",
+    price: 1400,
+    itinerary: [
+      { day: 1, details: "Arrival and lakeside dinner." },
+      { day: 2, details: "Morning game drive followed by an afternoon bird watching tour." },
+      { day: 3, details: "Leisurely nature walk and departure." },
+    ],
+    reviews: [
+      { name: "Laura Wilson", comment: "Perfect for nature lovers and bird watchers!", rating: 4.6 },
+      { name: "David Johnson", comment: "The sunsets over the lake were unforgettable.", rating: 4.8 },
+    ],
+    promotions: "Includes a complimentary bird watching tour!",
+    image: "/images/manyara.jpg",
+  },
+  {
+    id: 6,
+    destination: "Zanzibar, Tanzania",
+    activities: ["Beach Relaxation", "Historical Tours", "Water Sports"],
+    description: "Unwind on the pristine beaches of Zanzibar while exploring its rich history and culture.",
+    price: 1900,
+    itinerary: [
+      { day: 1, details: "Arrival and relaxation on the beach." },
+      { day: 2, details: "Guided tour of Stone Town and water sports adventures." },
+      { day: 3, details: "Visit a spice farm and departure." },
+    ],
+    reviews: [
+      { name: "Chris Martin", comment: "The perfect blend of relaxation and adventure!", rating: 4.7 },
+      { name: "Alice Walker", comment: "Zanzibar's culture and beaches are spectacular.", rating: 4.9 },
+    ],
+    promotions: "Extend your stay to enjoy a free beach excursion!",
+    image: "/images/zanzibar.webp",
+  },
+  {
+    id: 7,
+    destination: "Bwindi Impenetrable Forest, Uganda",
+    activities: ["Gorilla Trekking", "Nature Walks", "Community Visits"],
+    description: "Embark on a once-in-a-lifetime gorilla trekking adventure in the pristine Bwindi Forest.",
+    price: 2200,
+    itinerary: [
+      { day: 1, details: "Arrival and briefing on gorilla trekking." },
+      { day: 2, details: "Guided gorilla trekking experience." },
+      { day: 3, details: "Community visit and departure." },
+    ],
+    reviews: [
+      { name: "Linda Green", comment: "A heartwarming and unforgettable adventure!", rating: 4.9 },
+      { name: "Mark Thompson", comment: "The gorilla trek was intense and moving.", rating: 5 },
+    ],
+    promotions: "Gorilla trekking permit included with this package!",
+    image: "/images/bwindi.jpg",
+  },
+  {
+    id: 8,
+    destination: "Murchison Falls, Uganda",
+    activities: ["River Cruises", "Game Drives", "Waterfall Tours"],
+    description: "Witness the power of Murchison Falls and enjoy thrilling game drives along the Nile.",
+    price: 1600,
+    itinerary: [
+      { day: 1, details: "Arrival and relaxing river cruise." },
+      { day: 2, details: "Full-day game drive with a waterfall tour." },
+      { day: 3, details: "Morning safari and departure." },
+    ],
+    reviews: [
+      { name: "Peter Parker", comment: "An exhilarating mix of adventure and natural beauty!", rating: 4.8 },
+      { name: "Susan Lee", comment: "Murchison Falls is a must-see destination.", rating: 4.9 },
+    ],
+    promotions: "Special discount available for group bookings!",
+    image: "/images/murchison.webp",
+  },
+  {
+    id: 9,
+    destination: "Samburu National Reserve, Kenya",
+    activities: ["Wildlife Safaris", "Cultural Tours", "Bird Watching"],
+    description: "Explore the rugged landscapes of Samburu National Reserve and encounter unique wildlife species native to Kenya’s arid region.",
+    price: 1700,
+    itinerary: [
+      { day: 1, details: "Arrival in Samburu and orientation safari." },
+      { day: 2, details: "Full-day game drive to see endemic wildlife." },
+      { day: 3, details: "Visit a local Samburu community and departure." },
+    ],
+    reviews: [
+      { name: "Jane Doe", comment: "A unique and enriching experience in Kenya's wild frontier!", rating: 4.8 },
+      { name: "Richard Miles", comment: "The cultural insights were as impressive as the wildlife sightings.", rating: 4.7 },
+    ],
+    promotions: "Book now and enjoy a complimentary cultural tour!",
+    image: "/images/samburu.jpg",
+  },
 ];
 
 export default packagesData;

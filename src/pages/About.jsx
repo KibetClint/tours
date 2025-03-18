@@ -21,6 +21,7 @@ function AboutUs() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* About Us */}
+          
           <div className="bg-white p-6 rounded shadow">
             <h2 className="text-2xl font-bold text-center mb-4">About Us</h2>
             <p className="text-base text-center">
