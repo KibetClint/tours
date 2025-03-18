@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import destinationsData from "../data/destinationData.jsx";
 
 const DestinationDetails = () => {
@@ -80,6 +80,13 @@ const DestinationDetails = () => {
         <p>
           From personalized tour packages to exclusive local experiences, {destination.name} is the perfect destination for those seeking both adventure and relaxation. Book your trip today and prepare to embark on an unforgettable journey!
         </p>
+      </div>
+      <div className="mt-8 text-white px-4 py-2 rounded-md transition block text-center w-64">
+        <Link
+          to="/book"
+          className="bg-blue-500 text-white px-6 py-3 rounded-md font-semibold text-lg hover:bg-blue-600 transition block text-center">
+          Book Your Trip Now
+        </Link>
       </div>
     </div>
   );
