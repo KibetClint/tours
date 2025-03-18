@@ -44,7 +44,7 @@ const destinationsData = [
     name: "Nairobi National Park, Kenya",
     description: "A quick wildlife escape on the outskirts of Kenya's bustling capital.",
     distanceFromCapital: "10km", // Very close to central Nairobi
-    image: "/images/nairobi-park.jpg",
+    image: "/images/nnp.jpg",
     detailsPage: "/destinations/6"
   },
   // Add additional destination objects as needed...
