@@ -38,7 +38,7 @@ const featuredDestinations = [
 const topPackages = [
   { id: 1, name: "Luxury Safari", img: "/images/D1.webp", price: "$2000" },
   { id: 2, name: "Beach Escape", img: "/images/D3.jpg", price: "$1500" },
-  { id: 3, name: "Adventure Trek", img: "/images/D4.jpg", price: "$1800" }
+  { id: 3, name: "Adventure Trek", img: "/images/D4.jpg", price: "$1800" },
 ];
 
 function Home() {
@@ -183,15 +183,81 @@ function Home() {
           </SwiperSlide>
         </Swiper>
       </section>
-
-      {/* Featured Destinations */}
+      {/* Our Services Section */}
       <motion.section
-        className="py-12 bg-gray-100"
+        className="py-12 bg-white"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="container mx-auto px-8">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+          {/* Layout: image on the left, 4 service items on the right */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Lion Cub Image */}
+            <div>
+              <img
+                src="/images/cubs.jpg"
+                alt="Lion cubs"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+
+            {/* Service Boxes */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Service 1 */}
+              <div className="bg-blue-500 text-white p-4 flex flex-col items-center justify-center rounded-lg">
+                <img
+                  src="/icons/adventure.png"
+                  alt="Tours icon"
+                  className="mb-2 w-10 h-10"
+                />
+                <p className="font-semibold text-center">
+                  Domestic &amp; International <br /> Tours &amp; Travel
+                </p>
+              </div>
+
+              {/* Service 2 */}
+              <div className="bg-blue-500 text-white p-4 flex flex-col items-center justify-center rounded-lg">
+                <img
+                  src="/icons/adventure.png"
+                  alt="Airport transfer icon"
+                  className="mb-2 w-10 h-10"
+                />
+                <p className="font-semibold text-center">Airport Transfer</p>
+              </div>
+
+              {/* Service 3 */}
+              <div className="bg-blue-500 text-white p-4 flex flex-col items-center justify-center rounded-lg">
+                <img
+                  src="/icons/experience.png"
+                  alt="Air ticketing icon"
+                  className="mb-2 w-10 h-10"
+                />
+                <p className="font-semibold text-center">Air <br />Ticketing</p>
+              </div>
+
+              {/* Service 4 */}
+              <div className="bg-blue-500 text-white p-4 flex flex-col items-center justify-center rounded-lg">
+                <img
+                  src="/icons/support.png"
+                  alt="Hotel booking icon"
+                  className="mb-2 w-10 h-10"
+                />
+                <p className="font-semibold text-center">Hotel <br /> Booking</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+      {/* Featured Destinations */}
+      <motion.section
+        className="py-8 bg-gray-100"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="container mx-auto px-2">
           <h2 className="text-3xl font-bold text-center mb-8">Featured Destinations</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredDestinations.map((dest) => (
@@ -216,14 +282,16 @@ function Home() {
         </div>
       </motion.section>
 
+
+
       {/* Top Packages */}
       <motion.section
-        className="py-12 bg-white"
+        className="py-8 bg-white"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-2">
           <h2 className="text-3xl font-bold text-center mb-8">Top Packages</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {topPackages.map((packageItem) => (
@@ -239,8 +307,12 @@ function Home() {
                     className="w-full h-64 object-cover rounded-lg"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-end p-4">
-                    <h3 className="text-white text-xl font-semibold">{packageItem.name}</h3>
-                    <p className="text-white text-lg font-medium">{packageItem.price}</p>
+                    <h3 className="text-white text-xl font-semibold">
+                      {packageItem.name}
+                    </h3>
+                    <p className="text-white text-lg font-medium">
+                      {packageItem.price}
+                    </p>
                   </div>
                 </div>
               </Link>
